@@ -56,3 +56,4 @@ C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.iOS\
 C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.iOS\obj\iPhoneSimulator\Debug\App1.iOS.csproj.CopyComplete
 C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.iOS\obj\iPhoneSimulator\Debug\App1.iOS.exe
 C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.iOS\obj\iPhoneSimulator\Debug\App1.iOS.pdb
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.iOS\bin\iPhoneSimulator\Debug\Xamarin.Forms.OpenWhatsApp.dll

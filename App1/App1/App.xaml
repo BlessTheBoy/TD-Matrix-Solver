@@ -45,6 +45,8 @@
             <Setter Property="HorizontalOptions" Value="Center"/>
             <Setter Property="VerticalOptions" Value="Center"/>
             <Setter Property="TextColor" Value="#149414"/>
+            <Setter Property="BackgroundColor" Value="#202024"/>
+            <Setter Property="PlaceholderColor" Value="#666666"/>
         </Style>
         
         <Style TargetType="{x:Type Button}">

@@ -14,7 +14,7 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Orientation="Vertical" Spacing="20" HorizontalOptions="Center">
-                <Grid x:Name="grids" HorizontalOptions="Center" Margin="50, 0, 50, 0" RowSpacing="0">
+                <Grid x:Name="grids" HorizontalOptions="Center" Margin="50, 20, 50, 0" RowSpacing="0">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="3" />
                         <ColumnDefinition Width="Auto" />

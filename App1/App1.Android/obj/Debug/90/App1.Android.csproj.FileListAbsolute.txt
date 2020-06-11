@@ -472,4 +472,4 @@ C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.Andr
 C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.Android\obj\Debug\90\stamp\SetupDependenciesForDesigner.stamp
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1.Android\obj\Debug\90\android\assets\Xamarin.Forms.OpenWhatsApp.dll

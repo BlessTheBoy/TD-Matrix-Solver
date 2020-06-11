@@ -63,6 +63,18 @@
           "build/Xamarin.Forms.props": {},
           "build/Xamarin.Forms.targets": {}
         }
+      },
+      "Xamarin.Forms.OpenWhatsApp/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "3.4.0.1009999"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll": {}
+        }
       }
     }
   },
@@ -556,13 +568,26 @@
         "xamarin.forms.4.3.0.908675.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Xamarin.Forms.OpenWhatsApp/1.0.1": {
+      "sha512": "q7NM7cgSs/Ab8xRCRBFGKW8ROYVZuRlOkzrKapVXK8Oe7Jkbh7+x8QH9ZAdphz9tzNvkMgulAuFbta+9fzeO7Q==",
+      "type": "package",
+      "path": "xamarin.forms.openwhatsapp/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xamarin.Forms.OpenWhatsApp.dll",
+        "xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512",
+        "xamarin.forms.openwhatsapp.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
       "NETStandard.Library >= 2.0.3",
       "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.3.0.908675"
+      "Xamarin.Forms >= 4.3.0.908675",
+      "Xamarin.Forms.OpenWhatsApp >= 1.0.1"
     ]
   },
   "packageFolders": {
@@ -622,6 +647,10 @@
           "Xamarin.Forms": {
             "target": "Package",
             "version": "[4.3.0.908675, )"
+          },
+          "Xamarin.Forms.OpenWhatsApp": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           }
         },
         "imports": [
