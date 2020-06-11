@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Pages.STDMPage"
+             Title="STDM">
+    <ContentPage.Resources>
+        <Style TargetType="BoxView">
+            <Setter Property="Grid.RowSpan" Value="3"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Spacing="20" HorizontalOptions="CenterAndExpand">
+                <Grid x:Name="grids" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 0" RowSpacing="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <BoxView Grid.Column="0"/>
+                    <Entry Grid.Row="0" Grid.Column="1" Placeholder="a"/>
+                    <Entry Placeholder="b" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="0" Grid.Row="0" Grid.Column="3"/>
+
+                    <Entry Placeholder="c" Grid.Row="1" Grid.Column="1"/>
+                    <Entry Placeholder="d" Grid.Row="1" Grid.Column="2"/>
+                    <Entry Placeholder="e" Grid.Row="1" Grid.Column="3"/>
+
+                    <Label Text="0" Grid.Row="2" Grid.Column="1"/>
+                    <Entry Placeholder="f" Grid.Row="2" Grid.Column="2"/>
+                    <Entry Placeholder="g" Grid.Row="2" Grid.Column="3"/>
+                    <BoxView Grid.Column="4"/>
+
+                    <BoxView Grid.Column="5"/>
+                    <Label TextType="Html" Grid.Row="0" Grid.Column="6">
+                        <![CDATA[
+                        C<sup><small>n+1</small></sup><sub><small>1</small></sub>
+                        ]]>
+                    </Label>
+                    <Label TextType="Html" Grid.Row="1" Grid.Column="6">
+                        <![CDATA[
+                        C<sup><small>n+1</small></sup><sub><small>2</small></sub>
+                        ]]>
+                    </Label>
+                    <Label TextType="Html" Grid.Row="2" Grid.Column="6">
+                        <![CDATA[
+                        C<sup><small>n+1</small></sup><sub><small>3</small></sub>
+                        ]]>
+                    </Label>
+                    <BoxView Grid.Column="7"/>
+
+                    <Label Text="=" FontSize="30" Grid.RowSpan="3" Grid.Column="8"/>
+
+                    <BoxView Grid.Column="9"/>
+
+                    <Entry ClassId="a" Placeholder="a1" Grid.Row="0" Grid.Column="10"/>
+                    <Label TextType="Html" FontAttributes="Bold" Grid.Row="0" Grid.Column="11">
+                        <![CDATA[
+                        C<sup><small>n</small></sup><sub><small>1</small></sub> +
+                        ]]>
+                    </Label>
+                    <Entry ClassId="b" Placeholder="b1" Grid.Row="0" Grid.Column="12"/>
+
+                    <Entry ClassId="a" Placeholder="a2" Grid.Row="1" Grid.Column="10"/>
+                    <Label TextType="Html" FontAttributes="Bold" Grid.Row="1" Grid.Column="11">
+                        <![CDATA[
+                        C<sup><small>n</small></sup><sub><small>2</small></sub> +
+                        ]]>
+                    </Label>
+                    <Entry ClassId="b" Placeholder="b2" Grid.Row="1" Grid.Column="12"/>
+
+                    <Entry ClassId="a" Placeholder="a3" Grid.Row="2" Grid.Column="10"/>
+                    <Label TextType="Html" FontAttributes="Bold" Grid.Row="2" Grid.Column="11">
+                        <![CDATA[
+                        C<sup><small>n</small></sup><sub><small>3</small></sub> +
+                        ]]>
+                    </Label>
+                    <Entry ClassId="b" Placeholder="b3" Grid.Row="2" Grid.Column="12"/>
+                    <BoxView Grid.Column="13"/>
+                </Grid>
+                <Label x:Name="invalidInput" Margin="0, 0, 0, 0" TextColor="Red" FontSize="12" HorizontalTextAlignment="Center" IsVisible="False"/>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center">
+                    <Label Text="Enter initial values of C1 to C3" FontAttributes="Bold"/>
+                    <Grid HorizontalOptions="StartAndExpand" x:Name="initialValues">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                    </Grid>
+                </StackLayout>
+                <StackLayout HorizontalOptions="CenterAndExpand" Spacing="20" Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal" Spacing="0">
+                        <Label Text="Time step, dT:" TextColor="White" FontAttributes="Bold"/>
+                        <Entry x:Name="Step" WidthRequest="60" FontSize="14" HorizontalTextAlignment="Start"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" >
+                        <Label Text="Final time, T:" TextColor="White" FontAttributes="Bold"/>
+                        <Entry x:Name="FinalTime" WidthRequest="60" FontSize="14" HorizontalTextAlignment="Start"/>
+                    </StackLayout>
+                </StackLayout>
+
+                <Button Clicked="Solve_Button_Clicked" Margin="0, 15, 0, 0" WidthRequest="240" Text="Solve Matrix"/>
+                <ScrollView Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                    <Grid Margin="20, 20, 20, 20" HorizontalOptions="StartAndExpand" x:Name="answerStack" ColumnSpacing="20">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Text="Time" Grid.Column="0" Grid.Row="0" MinimumWidthRequest="100"/>
+                        <BoxView HorizontalOptions="Center" WidthRequest="1" Color="White" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"/>
+
+                        <Label Text="       C1                      C2                  C3      " FontAttributes="Bold" MinimumWidthRequest="50" Grid.Column="2" Grid.Row="0"/>
+
+
+                        <Label x:Name="timeLabel" Text="" Grid.Column="0" Grid.Row="1" MinimumWidthRequest="100"/>
+
+
+                        <Label x:Name="ansLabel" Text="" FontAttributes="Bold" Grid.Column="2" Grid.Row="1"/>
+                    </Grid>
+                </ScrollView>
+                <Button Clicked="Clear_Button_Clicked" WidthRequest="240" Text="Clear Matrix" Margin="0,0,0,30"/>
+                <StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

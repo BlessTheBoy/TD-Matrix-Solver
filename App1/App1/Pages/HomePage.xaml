@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Pages.HomePage"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="HorizontalOptions" Value="StartAndExpand"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical" BackgroundColor="#151519">
+            <Grid BackgroundColor="#151519">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackLayout Orientation="Vertical" Spacing="0" BackgroundColor="#151519" Margin="20, 20, 20, 0">
+                    <Label Text="Tri-Diagonal Matrix" TextColor="White" FontSize="29" FontAttributes="Bold" HorizontalTextAlignment="Start" Margin="0, 20, 20,0"/>
+                    <Label Text="Solver For Numerical Analysis." TextColor="White" Opacity=".7" FontSize="11" FontAttributes="Italic" HorizontalTextAlignment="Start" Margin="0, 0, 20, 0"/>
+                </StackLayout>
+
+
+                <ScrollView Grid.Row="1" Orientation="Horizontal" BackgroundColor="#151519" HorizontalScrollBarVisibility="Never" >
+                    <StackLayout Orientation="Horizontal" Spacing="20" Margin="0, 20, 20, 0">
+                        <Frame x:Name="TDM" CornerRadius="24" Margin="20, 10, 0, 0" Padding="0" WidthRequest="230" HeightRequest="270" IsClippedToBounds="True" HorizontalOptions="Center">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TDM_Clicked" NumberOfTapsRequired="1"/>
+                            </Frame.GestureRecognizers>
+                            <Image Source="tdm.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Frame>
+                        <Frame x:Name="STDM" CornerRadius="24" Margin="20, 10, 30, 0" Padding="0" WidthRequest="230" HeightRequest="270" IsClippedToBounds="True" HorizontalOptions="Center">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="STDM_Clicked" NumberOfTapsRequired="1"/>
+                            </Frame.GestureRecognizers>
+                            <Image Source="stdm.png" Aspect="AspectFill" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        </Frame>
+                    </StackLayout>
+                </ScrollView>
+
+                <StackLayout Grid.Row="2" Orientation="Vertical" Spacing="10" Margin="20, 20, 20, 20" BackgroundColor="#151519">
+                    <Label Text="Instructions" TextColor="White" FontAttributes="Bold" FontSize="30" Margin="0, 20, 20, 0"/>
+                    <Label Text="{Binding Instructions}" TextColor="White" Opacity=".7" FontSize="17" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="3" Orientation="Vertical" Spacing="10" Margin="20, 10, 20, 0" BackgroundColor="#151519">
+                    <Label Text="NB" TextColor="White" FontSize="30" FontAttributes="Bold" Margin="0, 20, 20, 0"/>
+                    <Label Text="{Binding Note}" TextColor="White" Opacity=".7" FontSize="17" HorizontalOptions="StartAndExpand"/>
+                </StackLayout>
+
+                <StackLayout Grid.Row="4" Orientation="Vertical" Spacing="10" Margin="20, 20, 20, 20" BackgroundColor="#151519">
+                    <Label Text="{Binding Feedback}" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="20, 20, 20, 20"/>
+                    <Button Text="Click Here" Clicked="Feedback_Button_Clicked" HorizontalOptions="CenterAndExpand" HeightRequest="44" WidthRequest="320" CornerRadius="20" BackgroundColor="#149414"/>
+                    <Label Text="{Binding Copyright}" TextColor="White" FontSize="21" Opacity=".5" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Grid>
+
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

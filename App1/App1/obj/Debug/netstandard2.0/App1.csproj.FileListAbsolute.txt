@@ -1,0 +1,14 @@
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\bin\Debug\netstandard2.0\App1.deps.json
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\bin\Debug\netstandard2.0\App1.dll
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\bin\Debug\netstandard2.0\ref\App1.dll
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\bin\Debug\netstandard2.0\App1.pdb
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\App1.csprojAssemblyReference.cache
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\Pages\HomePage.xaml.g.cs
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfoInputs.cache
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\App1.AssemblyInfo.cs
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\App1.dll
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\ref\App1.dll
+C:\Users\Hp\Documents\Programming\GitHub\beefaxx\TD-Matrix-Solver\App1\App1\obj\Debug\netstandard2.0\App1.pdb

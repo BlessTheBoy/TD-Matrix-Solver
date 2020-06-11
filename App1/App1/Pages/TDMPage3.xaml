@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Pages.TDMPage3"
+             Title="TDM">
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontSize" Value="14"/>            
+        </Style>
+        <Style TargetType="Entry">
+            <Setter Property="FontSize" Value="13"/>            
+            <Setter Property="WidthRequest" Value="24"/>
+        </Style>        
+        <Style TargetType="BoxView">
+            <Setter Property="Grid.RowSpan" Value="8"/>
+        </Style>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical" Spacing="20" HorizontalOptions="CenterAndExpand" Margin="0,0,0,0" Padding="0">
+                <Grid x:Name="grids" HorizontalOptions="FillAndExpand" Margin="0, 20, 0, 0" RowSpacing="1" Padding="0" MinimumWidthRequest="400" ColumnSpacing="3">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <BoxView Grid.Column="0"/>
+                    <Entry Grid.Row="0" Grid.Column="1" Placeholder="a" />
+                    <Entry Placeholder="b" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="0" Grid.Row="0" Grid.Column="3"/>
+                    <Label Text="." Grid.Row="0" Grid.Column="4"/>
+                    <Label Text="." Grid.Row="0" Grid.Column="5"/>
+                    <Label Text="." Grid.Row="0" Grid.Column="6"/>
+                    <Label Text="0" Grid.Row="0" Grid.Column="7"/>
+                    <Label Text="0" Grid.Row="0" Grid.Column="8"/>
+                    <Label Text="0" Grid.Row="0" Grid.Column="9"/>
+
+                    <Entry Placeholder="c" Grid.Row="1" Grid.Column="1"/>
+                    <Entry Placeholder="d" Grid.Row="1" Grid.Column="2"/>
+                    <Entry Placeholder="e" Grid.Row="1" Grid.Column="3"/>
+                    <Label Text="." Grid.Row="1" Grid.Column="4"/>
+                    <Label Text="." Grid.Row="1" Grid.Column="5"/>
+                    <Label Text="." Grid.Row="1" Grid.Column="6"/>
+                    <Label Text="0" Grid.Row="1" Grid.Column="7"/>
+                    <Label Text="0" Grid.Row="1" Grid.Column="8"/>
+                    <Label Text="0" Grid.Row="1" Grid.Column="9"/>
+
+                    <Label Text="0" Grid.Row="2" Grid.Column="1"/>
+                    <Entry Placeholder="f" Grid.Row="2" Grid.Column="2"/>
+                    <Entry Placeholder="g" Grid.Row="2" Grid.Column="3"/>
+                    <Entry Placeholder="h" Grid.Row="2" Grid.Column="4"/>
+                    <Label Text="." Grid.Row="2" Grid.Column="5"/>
+                    <Label Text="." Grid.Row="2" Grid.Column="6"/>
+                    <Label Text="0" Grid.Row="2" Grid.Column="7"/>
+                    <Label Text="0" Grid.Row="2" Grid.Column="8"/>
+                    <Label Text="0" Grid.Row="2" Grid.Column="9"/>
+
+                    <Label Text="." Grid.Row="3" Grid.Column="1"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="2"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="3"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="4"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="5"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="6"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="7"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="8"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="9"/>
+
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="1"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="2"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="3"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="4"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="5"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="6"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="7"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="8"/>
+                    <Label Text=" .  " Grid.Row="4" Grid.Column="9"/>
+
+                    <Label Text="." Grid.Row="5" Grid.Column="1"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="2"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="3"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="4"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="5"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="6"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="7"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="8"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="9"/>
+
+                    <Label Text="0" Grid.Row="6" Grid.Column="1"/>
+                    <Label Text="0" Grid.Row="6" Grid.Column="2"/>
+                    <Label Text="0" Grid.Row="6" Grid.Column="3"/>
+                    <Label Text="." Grid.Row="6" Grid.Column="4"/>
+                    <Label Text="." Grid.Row="6" Grid.Column="5"/>
+                    <Label Text="." Grid.Row="6" Grid.Column="6"/>
+                    <Entry Placeholder="i" Grid.Row="6" Grid.Column="7"/>
+                    <Entry Placeholder="j" Grid.Row="6" Grid.Column="8"/>
+                    <Entry Placeholder="k" Grid.Row="6" Grid.Column="9"/>
+
+                    <Label Text="0" Grid.Row="7" Grid.Column="1"/>
+                    <Label Text="0" Grid.Row="7" Grid.Column="2"/>
+                    <Label Text="0" Grid.Row="7" Grid.Column="3"/>
+                    <Label Text="." Grid.Row="7" Grid.Column="4"/>
+                    <Label Text="." Grid.Row="7" Grid.Column="5"/>
+                    <Label Text="." Grid.Row="7" Grid.Column="6"/>
+                    <Label Text="0" Grid.Row="7" Grid.Column="7"/>
+                    <Entry Placeholder="l" Grid.Row="7" Grid.Column="8"/>
+                    <Entry Placeholder="m" Grid.Row="7" Grid.Column="9"/>
+                    <BoxView Grid.Column="10"/>
+
+                    <BoxView Grid.Column="11"/>
+                    <Label TextType="Html" Grid.Row="0" Grid.Column="12">
+                        <![CDATA[
+                        N<sub><small>1</small></sub>
+                        ]]>
+                    </Label>
+                    <Label TextType="Html" Grid.Row="1" Grid.Column="12">
+                        <![CDATA[
+                        N<sub><small>2</small></sub>
+                        ]]>
+                    </Label>
+                    <Label TextType="Html" Grid.Row="2" Grid.Column="12">
+                        <![CDATA[
+                        N<sub><small>3</small></sub>
+                        ]]>
+                    </Label>
+                    <Label Text="." Grid.Row="3" Grid.Column="12"/>
+                    <Label Text="." Grid.Row="4" Grid.Column="12"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="12"/>
+                    <BoxView Grid.Column="13"/>
+
+                    <Label Text="=" FontSize="30" Grid.RowSpan="8" Grid.Column="14"/>
+
+                    <BoxView Grid.Column="15"/>
+                    <Entry Placeholder="J1" Grid.Row="0" Grid.Column="16"/>
+                    <Entry Placeholder="J2" Grid.Row="1" Grid.Column="16"/>
+                    <Entry Placeholder="J3" Grid.Row="2" Grid.Column="16"/>
+                    <Label Text="." Grid.Row="3" Grid.Column="16"/>
+                    <Label Text="." Grid.Row="4" Grid.Column="16"/>
+                    <Label Text="." Grid.Row="5" Grid.Column="16" Margin="0,0,0,5"/>
+                    <BoxView Grid.Column="17"/>
+                </Grid>
+                <Label x:Name="invalidInput" Margin="0, 0, 0, 0" TextColor="Red" FontSize="12" HorizontalTextAlignment="Center" HorizontalOptions="Center" IsVisible="False"/>
+                <StackLayout Orientation="Vertical" x:Name="askIfReapeated">
+                    <Label x:Name="question" FontAttributes="Bold" FontSize="18"/>
+                    <StackLayout Orientation="Horizontal" Spacing="20" HorizontalOptions="CenterAndExpand" x:Name="repeatedValue">
+                        <Button Clicked="Yes_Button_Clicked" WidthRequest="92" Text="Yes"/>
+                        <Button Clicked="No_Button_Clicked" WidthRequest="92" Text="No"/>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Spacing="20" Margin="20, 20, 20, 20" HorizontalOptions="FillAndExpand" x:Name="equivalentInput" IsVisible="False">
+                    <Label Text="Enter J4 to J8 below" FontSize="18" FontAttributes="Bold"/>
+                    <Grid HorizontalOptions="StartAndExpand" x:Name="equivalentStack">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                    </Grid>
+                </StackLayout>
+                <Button x:Name="solveButton" IsVisible="False" Clicked="Solve_Button_Clicked" Margin="0, 15, 0, 0" WidthRequest="240" Text="Solve Matrix"/>
+                <StackLayout Orientation="Horizontal" Spacing="20" Margin="20, 20, 20, 20" HorizontalOptions="FillAndExpand">
+                    <Grid HorizontalOptions="StartAndExpand" x:Name="answerStack">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                    </Grid>
+                </StackLayout>
+                <Button Clicked="Clear_Button_Clicked" Margin="0,0,0,30" WidthRequest="240" Text="Clear Matrix"/>
+                <StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

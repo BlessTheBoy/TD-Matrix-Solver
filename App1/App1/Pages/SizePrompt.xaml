@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App1.Pages.SizePrompt"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <Frame BackgroundColor="Black" BorderColor="#149414" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" CornerRadius="30" WidthRequest="300" HeightRequest="150">
+            <StackLayout Orientation="Vertical">
+                <Label Text="Enter size of matrix" TextColor="#149414" FontSize="20" HorizontalTextAlignment="Center"/>
+                <Label Text="invalid size" TextColor="Red" FontSize="16" HorizontalTextAlignment="Center" IsVisible="False" x:Name="errorMessage"/>
+                <Entry x:Name="sizeEntry" BackgroundColor="#151519" Placeholder="eg. 5" TextColor="#149414" Keyboard="Numeric" WidthRequest="70" HeightRequest="40" HorizontalOptions="Center" />
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
+                    <Button Text="Enter" Clicked="Enter_Button_Clicked" WidthRequest="92" HeightRequest="44" TextColor="White" BackgroundColor="#149414"/>
+                    <Button Text="Cancel" Clicked="Cancel_Button_Clicked" WidthRequest="92" HeightRequest="44" TextColor="White" BackgroundColor="#149414"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
