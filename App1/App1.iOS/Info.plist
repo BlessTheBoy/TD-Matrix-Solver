@@ -22,10 +22,8 @@
 	</array>
 	<key>MinimumOSVersion</key>
 	<string>8.0</string>
-	<key>CFBundleDisplayName</key>
-	<string>App1</string>
 	<key>CFBundleIdentifier</key>
-	<string>com.companyname.App1</string>
+	<string>com.BlessTheBoy.TD-MatrixSolver</string>
 	<key>CFBundleVersion</key>
 	<string>1.0</string>
 	<key>CFBundleName</key>
@@ -34,5 +32,7 @@
 	<string>LaunchScreen</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcon.appiconset</string>
+	<key>CFBundleDisplayName</key>
+	<string>TD-Matrix Solver</string>
 </dict>
 </plist>
