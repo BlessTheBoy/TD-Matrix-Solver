@@ -278,26 +278,13 @@
                 <Button x:Name="solveButton" IsVisible="False" Clicked="Solve_Button_Clicked" Margin="0, 15, 0, 0" WidthRequest="240" Text="Solve Matrix"/>
                 <ScrollView Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                     <Grid Margin="20, 20, 20, 20" HorizontalOptions="StartAndExpand" x:Name="answerStack" ColumnSpacing="20">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
-                            <ColumnDefinition Width="Auto"/>
-                        </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
                             <RowDefinition Height="Auto"/>
                         </Grid.RowDefinitions>
 
-                        <Label FontSize="18" Text="Time" Grid.Column="0" Grid.Row="0" TextColor="White" MinimumWidthRequest="100"/>
+                        <Label Text="Time" FontSize="18" FontAttributes="Bold" MinimumWidthRequest="100" Grid.Column="0" Grid.Row="0" HorizontalOptions="StartAndExpand"/>
                         <BoxView HorizontalOptions="Center" WidthRequest="1" Color="White" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"/>
-
-                        <Label x:Name="ansTitle" TextColor="White" FontSize="18" FontAttributes="Bold" MinimumWidthRequest="50" Grid.Column="2" Grid.Row="0"/>
-
-
-                        <Label x:Name="timeLabel" FontSize="18" Text="" Grid.Column="0" Grid.Row="1" TextColor="White" MinimumWidthRequest="100"/>
-
-
-                        <Label x:Name="ansLabel" Text="" TextColor="White" FontSize="18" FontAttributes="Bold" Grid.Column="2" Grid.Row="1"/>
+                        
                     </Grid>
                 </ScrollView>
                 <Button x:Name="clearButton" Clicked="Clear_Button_Clicked" WidthRequest="240" Text="Clear Matrix" Margin="0,0,0,30"/>

@@ -13,8 +13,8 @@
                 <Label Text="invalid size" TextColor="Red" FontSize="16" HorizontalTextAlignment="Center" IsVisible="False" x:Name="errorMessage"/>
                 <Entry x:Name="sizeEntry" BackgroundColor="#151519" Placeholder="eg. 5" TextColor="#149414" Keyboard="Numeric" WidthRequest="70" HeightRequest="40" HorizontalOptions="Center" />
                 <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
-                    <Button Text="Enter" Clicked="Enter_Button_Clicked" WidthRequest="92" HeightRequest="44" TextColor="White" BackgroundColor="#149414"/>
-                    <Button Text="Cancel" Clicked="Cancel_Button_Clicked" WidthRequest="92" HeightRequest="44" TextColor="White" BackgroundColor="#149414"/>
+                    <Button Text="Enter" Clicked="Enter_Button_Clicked" WidthRequest="100" HeightRequest="44" TextColor="White" BackgroundColor="#149414"/>
+                    <Button Text="Cancell" Clicked="Cancel_Button_Clicked" WidthRequest="100" HeightRequest="44" TextColor="White" BackgroundColor="#149414"/>
                 </StackLayout>
             </StackLayout>
         </Frame>

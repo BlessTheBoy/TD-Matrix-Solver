@@ -20,6 +20,7 @@ namespace App1.Pages
         private double step;
         private double[] a;
         private double[] b;
+        private StringBuilder[] ans;
         public STDMPage()
         {
             InitializeComponent();
@@ -28,14 +29,21 @@ namespace App1.Pages
             a = new double[3];
             b = new double[3];
 
+            ans = new StringBuilder[4];
+            for (int i = 0; i < 4; i++)
+            {
+                ans[i] = new StringBuilder();
+            }
+
             for (int i = 1; i < 4; i++)
             {
                 Label Name = new Label { Text = "C" + i, FontSize = 14, TextColor = Color.White };
                 Entry nameValue = new Entry { WidthRequest = 80, HorizontalTextAlignment = TextAlignment.Start, FontSize = 14, TextColor = Color.FromHex("#149414"), Keyboard = Keyboard.Numeric };
                 initialValues.Children.Add(Name, 0, i - 1);
                 initialValues.Children.Add(nameValue, 1, i - 1);
-            }
+            }            
         }
+        
 
 
         private void Solve_Button_Clicked(object sender, EventArgs e)
@@ -47,8 +55,9 @@ namespace App1.Pages
                     SetReduced();
                     matrix.equivalentMatrix = CalculateEquivalent(results);
                     results = Solver.MatrixSolver(matrix);
-                    DisplayResults(results, i);
+                    CummulateResults(results, i);                    
                 }
+                DisplayResults();
             }
         }
 
@@ -159,15 +168,29 @@ namespace App1.Pages
             return true;
         }
 
-        private void DisplayResults(double[] nswers, int time)
+        private void DisplayResults()
         {
-            timeLabel.Text = timeLabel.Text + (time * step).ToString() + "\n";
-            string ans = "";
+            int i = 0;
+            foreach (View item in answerStack.Children)
+            {
+                if (item.GetType() == typeof(Label))
+                {
+                    Label E = (Label)item;
+                    string u = ans[i].ToString();
+                    E.Text = E.Text +  u;
+                    i++;
+                }
+            }
+        }
+
+        private void CummulateResults(double[] nswers, int time)
+        {
+            ans[0].Append("\n" + (time * step).ToString());
             for (int y = 0; y < 3; y++)
             {
-                ans += string.Format("{0,-16:###0.000000}", nswers[y]);
+                string ansT = string.Format("\n {0,-16:0.000000}", nswers[y]);
+                ans[y+1].Append(ansT);                
             }
-            ansLabel.Text += (ans + "\n");
         }
 
         private void Clear_Button_Clicked(object sender, EventArgs e)
@@ -180,8 +203,6 @@ namespace App1.Pages
                     E.Text = "";
                 }
             }
-            timeLabel.Text = "";
-            ansLabel.Text = "";
             FinalTime.Text = "";
             Step.Text = "";
             foreach (View item in grids.Children)
@@ -193,6 +214,27 @@ namespace App1.Pages
                 }
             }
             invalidInput.IsVisible = false;
+            int o = 0;
+            foreach (View item in answerStack.Children)
+            {
+                if (item.GetType() == typeof(Label))
+                {                    
+                    Label E = (Label)item;
+                    if (o == 0)
+                    {
+                        E.Text = "Time";
+                        o++;
+                        continue;
+                    }
+                    string u = string.Format("C{0}", o);
+                    E.Text = u;
+                    o++;
+                }
+            }
+            for (int i = 0; i < 3; i++)
+            {
+                ans[i] = new StringBuilder();
+            }
         }
 
         private double[] CalculateEquivalent(double[] answer)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1\\App1.csproj": {}
+    "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1\\App1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1\\App1.csproj": {
+    "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1\\App1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1\\App1.csproj",
+        "projectUniqueName": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1\\App1.csproj",
         "projectName": "App1",
-        "projectPath": "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1\\App1.csproj",
+        "projectPath": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1\\App1.csproj",
         "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1\\obj\\",
+        "outputPath": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
@@ -72,7 +72,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

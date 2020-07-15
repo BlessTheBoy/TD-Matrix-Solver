@@ -1964,11 +1964,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1.Android\\App1.Android.csproj",
+      "projectUniqueName": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1.Android\\App1.Android.csproj",
       "projectName": "App1.Android",
-      "projectPath": "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1.Android\\App1.Android.csproj",
+      "projectPath": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1.Android\\App1.Android.csproj",
       "packagesPath": "C:\\Users\\Hp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1.Android\\obj\\",
+      "outputPath": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1989,8 +1989,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1\\App1.csproj": {
-              "projectPath": "C:\\Users\\Hp\\Documents\\Programming\\GitHub\\beefaxx\\TD-Matrix-Solver\\App1\\App1\\App1.csproj"
+            "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1\\App1.csproj": {
+              "projectPath": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1\\App1.csproj"
             }
           }
         }

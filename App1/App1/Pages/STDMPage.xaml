@@ -110,11 +110,11 @@
                 </StackLayout>
                 <StackLayout HorizontalOptions="CenterAndExpand" Spacing="20" Orientation="Horizontal">
                     <StackLayout Orientation="Horizontal" Spacing="0">
-                        <Label Text="Time step, dT:" TextColor="White" FontAttributes="Bold"/>
+                        <Label Text="Time step, dT:" TextColor="White" FontAttributes="Bold" FontSize="14"/>
                         <Entry x:Name="Step" WidthRequest="60" FontSize="14" HorizontalTextAlignment="Start"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal" >
-                        <Label Text="Final time, T:" TextColor="White" FontAttributes="Bold"/>
+                        <Label Text="Final time, T:" TextColor="White" FontAttributes="Bold" FontSize="14"/>
                         <Entry x:Name="FinalTime" WidthRequest="60" FontSize="14" HorizontalTextAlignment="Start"/>
                     </StackLayout>
                 </StackLayout>
@@ -126,22 +126,23 @@
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
                             <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="Auto"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>                            
                         </Grid.RowDefinitions>
 
-                        <Label Text="Time" Grid.Column="0" Grid.Row="0" MinimumWidthRequest="100"/>
-                        <BoxView HorizontalOptions="Center" WidthRequest="1" Color="White" Grid.Column="1" Grid.Row="0" Grid.RowSpan="2"/>
+                        <Label Text="Time" FontAttributes="Bold" Grid.Column="0" Grid.Row="0" MinimumWidthRequest="100" HorizontalOptions="StartAndExpand"/>
+                        <BoxView HorizontalOptions="Center" WidthRequest="1" Color="White" Grid.Column="1" Grid.Row="0" />
 
-                        <Label Text="       C1                      C2                  C3      " FontAttributes="Bold" MinimumWidthRequest="50" Grid.Column="2" Grid.Row="0"/>
-
-
-                        <Label x:Name="timeLabel" Text="" Grid.Column="0" Grid.Row="1" MinimumWidthRequest="100"/>
+                        <Label Text="C1" FontAttributes="Bold" MinimumWidthRequest="300" Grid.Column="2" Grid.Row="0" HorizontalOptions="StartAndExpand"/>
 
 
-                        <Label x:Name="ansLabel" Text="" FontAttributes="Bold" Grid.Column="2" Grid.Row="1"/>
+                        <Label Text="C2" FontAttributes="Bold" Grid.Column="3" Grid.Row="0" MinimumWidthRequest="300" HorizontalOptions="StartAndExpand"/>
+
+
+                        <Label Text="C3" FontAttributes="Bold" Grid.Column="4" Grid.Row="0" MinimumWidthRequest="300" HorizontalOptions="StartAndExpand"/>
                     </Grid>
                 </ScrollView>
                 <Button Clicked="Clear_Button_Clicked" WidthRequest="240" Text="Clear Matrix" Margin="0,0,0,30"/>

@@ -42,6 +42,11 @@ The Matrix Solver app is... and could be better if...");
             }
         }
 
+        private async void Ads_Button_Clicked(object sender, EventArgs e)
+        {
+ //           await DependencyService.Get<IAdmobInterstitialAds>().Display(AppConstants.InterstitialAppId);
+        }
+
         private async void TDM_Clicked(object sender, EventArgs e)
         {
             var sizePage = new SizePrompt(this);

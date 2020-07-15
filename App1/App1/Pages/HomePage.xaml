@@ -59,6 +59,7 @@
                 <StackLayout Grid.Row="4" Orientation="Vertical" Spacing="10" Margin="20, 20, 20, 20" BackgroundColor="#151519">
                     <Label Text="{Binding Feedback}" TextColor="White" FontSize="18" FontAttributes="Bold" Margin="20, 20, 20, 20"/>
                     <Button Text="Click Here" Clicked="Feedback_Button_Clicked" HorizontalOptions="CenterAndExpand" HeightRequest="44" WidthRequest="320" CornerRadius="20" BackgroundColor="#149414"/>
+                    <Button Text="Test Ads" Clicked="Ads_Button_Clicked" HorizontalOptions="CenterAndExpand" HeightRequest="44" WidthRequest="320" CornerRadius="20" BackgroundColor="#149414"/>
                     <Label Text="{Binding Copyright}" TextColor="White" FontSize="21" Opacity=".5" HorizontalOptions="Center"/>
                 </StackLayout>
             </Grid>

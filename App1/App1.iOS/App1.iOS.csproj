@@ -152,4 +152,7 @@
       <Name>App1</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splashImage.png" />
+  </ItemGroup>
 </Project>

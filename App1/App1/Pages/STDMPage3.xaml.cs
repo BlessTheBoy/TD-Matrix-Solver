@@ -14,26 +14,34 @@ namespace App1.Pages
     public partial class STDMPage3 : ContentPage
     {
         TDMA matrix;
+        private int size;
         private double[,] reduced;
         private double[] results;
         private double finalTime;
         private double step;
         private double[] a;
         private double[] b;
+        private StringBuilder[] ans;
         bool checka;
         bool checkb;
-        public STDMPage3(int size)
+        public STDMPage3(int num)
         {
             InitializeComponent();
             this.BindingContext = this;
 
 
-
+            size = num;
             matrix = new TDMA(size);
             results = new double[size];
             a = new double[size];
             b = new double[size];
             reduced = new double[size, 3];
+
+            ans = new StringBuilder[size + 1];
+            for (int i = 0; i <= size; i++)
+            {
+                ans[i] = new StringBuilder();
+            }
 
             Label V1 = new Label { TextType = TextType.Html, Text = "C<sup><small>n+1</small></sup><sub><small>" + (matrix.Size - 1) + "</small></sub> ", FontSize = 14, TextColor = Color.White };
             Label V2 = new Label { TextType = TextType.Html, Text = "C<sup><small>n+1</small></sup><sub><small>" + (matrix.Size) + "</small></sub> ", FontSize = 14, TextColor = Color.White };
@@ -122,14 +130,12 @@ namespace App1.Pages
                 bValues2.Children.Add(Name, 0, i - (endb + 1));
                 bValues2.Children.Add(nameValue, 1, i - (endb + 1));
             }
-            StringBuilder ansHead = new StringBuilder();
-            ansHead.Append("           ");
             for (int i = 1; i <= size; i++)
             {
-                ansHead.Append(string.Format("C{0,-28:00}", i));
+                string header = string.Format("C{0}", i);
+                Label ansColomn = new Label { Text = header, FontSize = 18, TextColor = Color.White, HorizontalOptions = LayoutOptions.StartAndExpand, FontAttributes = FontAttributes.Bold, MinimumWidthRequest = 300 };
+                answerStack.Children.Add(ansColomn, (i + 1), 0);
             }
-            ansTitle.Text = ansHead.ToString();
-
         }
 
 
@@ -142,8 +148,9 @@ namespace App1.Pages
                     SetReduced();
                     matrix.equivalentMatrix = CalculateEquivalent(results);
                     results = Solver.MatrixSolver(matrix);
-                    DisplayResults(results, i);
+                    CummulateResults(results, i);
                 }
+                DisplayResults();
             }
         }
 
@@ -421,16 +428,29 @@ namespace App1.Pages
             return true;
         }
 
-        private void DisplayResults(double[] nswers, int time)
+        private void DisplayResults()
         {
-            timeLabel.Text = timeLabel.Text + (time * step).ToString() + "\n";
-            StringBuilder ans = new StringBuilder();
-            for (int y = 0; y < matrix.Size; y++)
+            int i = 0;
+            foreach (View item in answerStack.Children)
             {
-                ans.Append(string.Format("{0,-18:00000.000000}", nswers[y]));
+                if (item.GetType() == typeof(Label))
+                {
+                    Label E = (Label)item;
+                    string u = ans[i].ToString();
+                    E.Text = E.Text + u;
+                    i++;
+                }
             }
-            string newS = ans.ToString();
-            ansLabel.Text += (newS + "\n");
+        }
+
+        private void CummulateResults(double[] nswers, int time)
+        {
+            ans[0].Append("\n" + (time * step).ToString());
+            for (int y = 0; y < size; y++)
+            {
+                string ansT = string.Format("\n {0,-16:0.000000}", nswers[y]);
+                ans[y + 1].Append(ansT);
+            }
         }
 
         private void Clear_Button_Clicked(object sender, EventArgs e)
@@ -483,8 +503,7 @@ namespace App1.Pages
                     E.Text = "";
                 }
             }
-            timeLabel.Text = "";
-            ansLabel.Text = "";
+            
             FinalTime.Text = "";
             Step.Text = "";
             foreach (View item in grids.Children)
@@ -494,6 +513,27 @@ namespace App1.Pages
                     Entry E = (Entry)item;
                     E.Text = "";
                 }
+            }
+            int o = 0;
+            foreach (View item in answerStack.Children)
+            {
+                if (item.GetType() == typeof(Label))
+                {
+                    Label E = (Label)item;
+                    if (o == 0)
+                    {
+                        E.Text = "Time";
+                        o++;
+                        continue;
+                    }
+                    string u = string.Format("C{0}", o);
+                    E.Text = u;
+                    o++;
+                }
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                ans[i] = new StringBuilder();
             }
             invalidInput.IsVisible = false;
             askIfReapeateda.IsVisible = true;
