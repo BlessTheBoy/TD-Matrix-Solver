@@ -117,3 +117,5 @@ C:\Users\Hp\Documents\Projects\App1\App1.iOS\obj\iPhoneSimulator\Debug\XamlC.sta
 C:\Users\Hp\Documents\Projects\App1\App1.iOS\obj\iPhoneSimulator\Debug\App1.iOS.csproj.CopyComplete
 C:\Users\Hp\Documents\Projects\App1\App1.iOS\obj\iPhoneSimulator\Debug\App1.iOS.exe
 C:\Users\Hp\Documents\Projects\App1\App1.iOS\obj\iPhoneSimulator\Debug\App1.iOS.pdb
+C:\Users\Hp\Documents\Projects\App1\App1.iOS\bin\iPhoneSimulator\Debug\Firebase.Core.dll
+C:\Users\Hp\Documents\Projects\App1\App1.iOS\bin\iPhoneSimulator\Debug\Google.MobileAds.dll

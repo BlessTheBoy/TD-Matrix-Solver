@@ -14,6 +14,7 @@ namespace App1.Pages
     public partial class HomePage : ContentPage
     {
         NavigationPage matrixPage;
+        private int loaded = 0;
         public HomePage()
         {
             InitializeComponent();
@@ -40,11 +41,6 @@ The Matrix Solver app is... and could be better if...");
             {
                 await DisplayAlert("Not Installed", "Whatsapp not installed!", "ok");
             }
-        }
-
-        private async void Ads_Button_Clicked(object sender, EventArgs e)
-        {
- //           await DependencyService.Get<IAdmobInterstitialAds>().Display(AppConstants.InterstitialAppId);
         }
 
         private async void TDM_Clicked(object sender, EventArgs e)
@@ -106,6 +102,27 @@ The Matrix Solver app is... and could be better if...");
         public async void LaunchPage()
         {
             await Navigation.PushAsync(matrixPage);
+        }
+
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            if (loaded == 2)
+            {
+                DisplayAds();
+                loaded = 0;
+            }
+            else
+            {
+                loaded++;
+            }
+        }
+
+        private async void DisplayAds()
+        {
+            await DependencyService.Get<IAdmobInterstitialAds>().Display(AppConstants.InterstitialAdId);
         }
     }
 }

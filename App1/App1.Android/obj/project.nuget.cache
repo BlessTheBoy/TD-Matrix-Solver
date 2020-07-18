@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Jzro5rPjVitLYajK8aBKYLSJW1JAC39jWAf0cIIQXI0f89MwTj3iKjD9NTQowjnfoWIdlkcLkXOWnoYdtltXCw==",
+  "dgSpecHash": "nPPBy0ytOtsSVwbSBlrr8W1VVW6XHNrwzrUi8Ij4pb7axzt7GAxovDOl0VhCYmf9dq90KDxPgsON3ENhugyx6w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1.Android\\App1.Android.csproj",
   "expectedPackageFiles": [
@@ -42,9 +42,12 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.vector.drawable\\28.0.0.3\\xamarin.android.support.vector.drawable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512",
-    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512"
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.googleplayservices.ads.lite\\60.1142.1\\xamarin.googleplayservices.ads.lite.60.1142.1.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.googleplayservices.basement\\60.1142.1\\xamarin.googleplayservices.basement.60.1142.1.nupkg.sha512"
   ],
   "logs": []
 }

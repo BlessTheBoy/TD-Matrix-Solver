@@ -1,13 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "6M2l1WNLm/GTl6AMD5IKzwNMjUMlptuOJ4CQOLwd7+Ijz982/vM0ns9aiCGahbCxoECrkT8G0Lw1Sc0NNbuzsw==",
+  "dgSpecHash": "wlK6Mypji8SimM5VGBubJ9O4VSu3e8CqkZI/iOq5CRo8c/zwgLAc1Vs/1p8OcaM9LA/SOziMhMP2RJZBojHlVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Hp\\Documents\\Projects\\App1\\App1.iOS\\App1.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Hp\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.build.download\\0.10.0\\xamarin.build.download.0.10.0.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.firebase.ios.core\\6.6.6\\xamarin.firebase.ios.core.6.6.6.nupkg.sha512",
     "C:\\Users\\Hp\\.nuget\\packages\\xamarin.forms\\4.3.0.908675\\xamarin.forms.4.3.0.908675.nupkg.sha512",
-    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512"
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.forms.openwhatsapp\\1.0.1\\xamarin.forms.openwhatsapp.1.0.1.nupkg.sha512",
+    "C:\\Users\\Hp\\.nuget\\packages\\xamarin.google.ios.mobileads\\7.57.0\\xamarin.google.ios.mobileads.7.57.0.nupkg.sha512"
   ],
   "logs": []
 }
