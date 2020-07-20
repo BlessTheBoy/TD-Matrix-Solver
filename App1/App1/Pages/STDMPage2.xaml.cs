@@ -47,6 +47,7 @@ namespace App1.Pages
 
         private void Solve_Button_Clicked(object sender, EventArgs e)
         {
+            ClearAns();
             if (CheckInput(matrix) && ValidateInitials())
             {
                 for (int i = 1; i < (finalTime / step) + 1; i++)
@@ -184,7 +185,7 @@ namespace App1.Pages
 
         private void CummulateResults(double[] nswers, int time)
         {
-            ans[0].Append("\n" + (time * step).ToString());
+            ans[0].Append(String.Format("\n{0:0.0}", (time * step)));
             for (int y = 0; y < 5; y++)
             {
                 string ansT = string.Format("\n {0,-16:0.000000}", nswers[y]);
@@ -213,6 +214,11 @@ namespace App1.Pages
                 }
             }
             invalidInput.IsVisible = false;
+            ClearAns();
+        }
+
+        private void ClearAns()
+        {
             int o = 0;
             foreach (View item in answerStack.Children)
             {

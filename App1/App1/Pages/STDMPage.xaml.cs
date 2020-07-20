@@ -48,6 +48,7 @@ namespace App1.Pages
 
         private void Solve_Button_Clicked(object sender, EventArgs e)
         {
+            ClearAns();
             if (CheckInput(matrix) && ValidateInitials())
             {
                 for (int i = 1; i < (finalTime / step) + 1; i++)
@@ -185,7 +186,7 @@ namespace App1.Pages
 
         private void CummulateResults(double[] nswers, int time)
         {
-            ans[0].Append("\n" + (time * step).ToString());
+            ans[0].Append(String.Format("\n{0:0.0}", (time * step)));
             for (int y = 0; y < 3; y++)
             {
                 string ansT = string.Format("\n {0,-16:0.000000}", nswers[y]);
@@ -214,11 +215,26 @@ namespace App1.Pages
                 }
             }
             invalidInput.IsVisible = false;
+            ClearAns();
+        }
+
+        private double[] CalculateEquivalent(double[] answer)
+        {
+            double[] values = new double[3];
+            for (int i = 0; i < 3; i++)
+            {
+                values[i] = (a[i] * answer[i]) + b[i];
+            }
+            return values;
+        }
+
+        private void ClearAns()
+        {
             int o = 0;
             foreach (View item in answerStack.Children)
             {
                 if (item.GetType() == typeof(Label))
-                {                    
+                {
                     Label E = (Label)item;
                     if (o == 0)
                     {
@@ -235,16 +251,6 @@ namespace App1.Pages
             {
                 ans[i] = new StringBuilder();
             }
-        }
-
-        private double[] CalculateEquivalent(double[] answer)
-        {
-            double[] values = new double[3];
-            for (int i = 0; i < 3; i++)
-            {
-                values[i] = (a[i] * answer[i]) + b[i];
-            }
-            return values;
         }
     }
 }

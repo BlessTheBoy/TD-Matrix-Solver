@@ -141,6 +141,7 @@ namespace App1.Pages
 
         private void Solve_Button_Clicked(object sender, EventArgs e)
         {
+            ClearAns();
             if (CheckInput(matrix) && ValidateInitials())
             {
                 for (int i = 1; i < (finalTime / step) + 1; i++)
@@ -445,7 +446,7 @@ namespace App1.Pages
 
         private void CummulateResults(double[] nswers, int time)
         {
-            ans[0].Append("\n" + (time * step).ToString());
+            ans[0].Append(String.Format("\n{0:0.0}", (time * step)));
             for (int y = 0; y < size; y++)
             {
                 string ansT = string.Format("\n {0,-16:0.000000}", nswers[y]);
@@ -503,7 +504,7 @@ namespace App1.Pages
                     E.Text = "";
                 }
             }
-            
+
             FinalTime.Text = "";
             Step.Text = "";
             foreach (View item in grids.Children)
@@ -514,6 +515,17 @@ namespace App1.Pages
                     E.Text = "";
                 }
             }
+            ClearAns();
+            invalidInput.IsVisible = false;
+            askIfReapeateda.IsVisible = true;
+            aValueInput.IsVisible = false;
+            askIfReapeatedb.IsVisible = false;
+            bValueInput.IsVisible = false;
+            solveButton.IsVisible = false;
+        }
+
+        private void ClearAns()
+        {
             int o = 0;
             foreach (View item in answerStack.Children)
             {
@@ -535,12 +547,6 @@ namespace App1.Pages
             {
                 ans[i] = new StringBuilder();
             }
-            invalidInput.IsVisible = false;
-            askIfReapeateda.IsVisible = true;
-            aValueInput.IsVisible = false;
-            askIfReapeatedb.IsVisible = false;
-            bValueInput.IsVisible = false;
-            solveButton.IsVisible = false;
         }
 
         private double[] CalculateEquivalent(double[] answer)
